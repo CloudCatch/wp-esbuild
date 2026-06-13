@@ -1,0 +1,45 @@
+{
+  "name": "@cloudcatch/wp-esbuild",
+  "version": "1.0.0",
+  "description": "Shared esbuild toolchain for WordPress development",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "wp-esbuild": "./bin/wp-esbuild.mjs"
+  },
+  "exports": {
+    ".": "./lib/build.mjs",
+    "./blocks-manifest": "./lib/build-blocks-manifest.mjs",
+    "./wordpress-externals": "./lib/wordpress-externals-plugin.mjs"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "wordpress",
+    "esbuild",
+    "blocks",
+    "gutenberg",
+    "scss",
+    "build"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "change-case": "^4.1.2",
+    "chokidar": "^4.0.3",
+    "esbuild": "^0.27.2",
+    "esbuild-sass-plugin": "^3.3.1",
+    "fast-glob": "^3.3.3",
+    "postcss": "^8.5.3",
+    "sass-embedded": "^1.97.2"
+  }
+}
