@@ -279,7 +279,21 @@ Compiles standalone stylesheets (block styles are handled by the blocks pipeline
 | --- | --- | --- |
 | `glob` | `*.{scss,sass}` | Entry file pattern. |
 | `ignore` | `[ '**/_*' ]` | Skip partials. |
+| `outName` | `'preserve'` or `'flat'` | Output naming (see below). |
+| `assetPhp` | `false` | Write `{name}.asset.php` with a content hash version. |
+| `assetDependencies` | `[]` | Dependencies listed in CSS `.asset.php`. |
 | `rtl` | global setting | Write `{name}-rtl.css` alongside each file. |
+
+**`outName` values:**
+
+| Value | Example input | Output |
+| --- | --- | --- |
+| `'preserve'` | `blocks/core/button.scss` | `blocks/core/button.css` |
+| `'flat'` | `blocks/core/button.scss` | `button.css` |
+| `{ join: '-', tail: 2 }` | `blocks/core/button.scss` | `core-button.css` |
+| `{ join: '-' }` | `blocks/core/button.scss` | `blocks-core-button.css` |
+
+Use `tail` to take the last N path segments (filename included) and `join` to flatten them into a single output filename. Handy when PHP expects flat CSS files derived from nested source paths.
 
 ### Copy
 
