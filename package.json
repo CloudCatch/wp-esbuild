@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "bin": {
-    "wp-esbuild": "./bin/wp-esbuild.mjs"
+    "wp-esbuild": "bin/wp-esbuild.mjs"
   },
   "exports": {
     ".": "./lib/build.mjs",
