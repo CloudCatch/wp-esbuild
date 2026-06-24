@@ -1,5 +1,10 @@
 # @cloudcatch/wp-esbuild
 
+[![npm version](https://img.shields.io/npm/v/@cloudcatch/wp-esbuild.svg)](https://www.npmjs.com/package/@cloudcatch/wp-esbuild)
+[![npm downloads](https://img.shields.io/npm/dm/@cloudcatch/wp-esbuild.svg)](https://www.npmjs.com/package/@cloudcatch/wp-esbuild)
+[![Node.js](https://img.shields.io/node/v/@cloudcatch/wp-esbuild.svg)](https://www.npmjs.com/package/@cloudcatch/wp-esbuild)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Fast esbuild-based builds for WordPress plugins and themes.**
 
 wp-esbuild is a build tool for modern WordPress development. It compiles your blocks, JavaScript, and styles into optimized assets your plugin or theme can enqueue in PHP — with sensible defaults and a config file when you need more control.
